@@ -1,0 +1,39 @@
+# Ignore arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignore arquivos de editor
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.sublime-*
+
+# Ignore logs e temporários
+*.log
+tmp/
+temp/
+
+# Ignore o diretório .venv se existir
+.venv/
+
+# Ignore arquivos de build se usar frameworks
+dist/
+build/
+node_modules/
+
+# Arquivos de credenciais (NUNCA commitar)
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Arquivos de backup
+*.bak
+*.backup
+
+# Uploads e assets dinâmicos
+uploads/
+assets/uploads/
