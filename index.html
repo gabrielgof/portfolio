@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gabriel Gof — Desenvolvedor Web & Automação</title>
+  <title>Gabriel Oliveira de Freitas — Desenvolvedor Web & Automação</title>
   <meta name="description" content="Desenvolvedor Web, Automação e Infraestrutura. Transformando processos manuais em soluções digitais escaláveis.">
   <meta name="keywords" content="desenvolvedor, python, web, automação, javascript, linux, portfolio">
-  <meta name="author" content="Gabriel Gof">
+  <meta name="author" content="Gabriel Oliveira de Freitas">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Gabriel Gof — Desenvolvedor Web & Automação">
+  <meta property="og:title" content="Gabriel Oliveira de Freitas — Desenvolvedor Web & Automação">
   <meta property="og:description" content="Transformando processos manuais em soluções digitais e escaláveis.">
   <meta property="og:url" content="https://gabrielgof.dv">
-  <meta property="og:image" content="https://gabrielgof.dv/og-image.png">
+  <meta property="og:image" content="foto-gabriel.jpg">
   <meta property="og:locale" content="pt_BR">
 
   <!-- Google Fonts: Geist (série Vercel, look moderno e técnico) -->
@@ -260,6 +260,28 @@
       margin-bottom: var(--space-4);
     }
     .hero-name .highlight { color: var(--accent); }
+
+    /* Foto de perfil no hero */
+    .hero-avatar {
+      text-align: center;
+      margin-bottom: var(--space-5);
+    }
+
+    .avatar-img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent);
+      box-shadow: 0 4px 16px rgba(96, 165, 250, 0.25), 0 2px 8px rgba(0,0,0,0.4);
+      background: var(--bg-elevated);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .avatar-img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 20px rgba(96, 165, 250, 0.35), 0 4px 12px rgba(0,0,0,0.5);
+    }
 
     .hero-title {
       font-size: clamp(18px, 2.5vw, 24px);
@@ -869,9 +891,12 @@
   <section id="hero">
     <div class="container">
       <div class="hero-content fade-in">
-        <p class="hero-greeting">Olá, eu sou Gabriel</p>
+        <div class="hero-avatar">
+          <img src="foto-gabriel.jpg" alt="Foto de Gabriel Oliveira de Freitas" class="avatar-img">
+        </div>
+        <p class="hero-greeting">Olá, eu sou Gabriel Oliveira de Freitas</p>
         <h1 class="hero-name">
-          Gabriel <span class="highlight">Gof</span>
+          Gabriel <span class="highlight">Oliveira de Freitas</span>
         </h1>
         <p class="hero-title">
           Desenvolvedor Web &amp; Automação — transformando processos manuais em soluções digitais escaláveis.
@@ -1220,7 +1245,7 @@
   <footer class="site-footer">
     <div class="container">
       <p class="site-footer-text">
-        &copy; 2025 Gabriel Gof. Built with raw HTML/CSS/JS — sem frameworks, sem rodeio.
+        &copy; 2025 Gabriel Oliveira de Freitas. Built with raw HTML/CSS/JS — sem frameworks, sem rodeio.
       </p>
       <div class="site-footer-links">
         <a href="https://github.com/gabrielgof" target="_blank" rel="noopener noreferrer">GitHub</a>
